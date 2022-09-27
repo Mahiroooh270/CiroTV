@@ -1,0 +1,9 @@
+import m3u8
+
+playlist = m3u8.load('http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtube.com/c/CiroGomesOficial/live')
+print(playlist.dumps())
+
+# if you want to write a file from its content
+
+playlist.dump('playlist.m3u8')
+
